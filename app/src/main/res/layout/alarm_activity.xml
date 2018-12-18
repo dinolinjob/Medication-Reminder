@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:headerBackground="@color/colorPrimary"
+        android:numbersSelectorColor="@color/colorPrimary">
+
+    </TimePicker>
+
+    <Button
+        android:id="@+id/set_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/time_picker"
+        android:layout_marginStart="52dp"
+        android:text="SET ALARM" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/time_picker"
+        android:layout_marginEnd="49dp"
+        android:text="CANCEL" />
+
+    <TextView
+        android:id="@+id/update_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Activate Alarm"
+        android:textSize="21dp" />
+</android.widget.RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dinolin.MedicationReminder.MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <EditText
+           android:id="@+id/Name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginTop="18dp"
+           android:ems="10"
+           android:hint="Name"
+           android:inputType="textPersonName" />
+
+       <EditText
+           android:id="@+id/Patient_id"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_below="@+id/Name"
+           android:layout_marginTop="12dp"
+           android:ems="10"
+           android:hint="Patient ID"
+           android:inputType="textPersonName" />
+
+       <EditText
+           android:id="@+id/disease"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentEnd="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignTop="@+id/textView4"
+           android:ems="10"
+           android:hint="Disease"
+           android:inputType="textPersonName" />
+
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/Name"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:text="Name         :"
+        android:textSize="22sp"/>
+
+     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignTop="@+id/Patient_id"
+        android:text="Patient ID  :"
+        android:textSize="22sp"/>
+
+       <TextView
+           android:id="@+id/textView4"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/textView3"
+           android:layout_alignStart="@+id/textView3"
+           android:layout_below="@+id/Patient_id"
+           android:layout_marginTop="13dp"
+           android:text="Disease     :"
+           android:textSize="22sp" />
+
+
+       <TextView
+           android:id="@+id/textView5"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignLeft="@+id/textin"
+           android:layout_alignStart="@+id/textin"
+           android:layout_below="@+id/disease"
+           android:text="MEDICINES:-"
+           android:textSize="22sp" />
+
+       <EditText
+           android:id="@+id/Medication"
+           android:layout_width="170sp"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/button2"
+           android:layout_alignParentStart="true"
+           android:layout_marginStart="16dp"
+           android:ems="10"
+           android:hint="Medicine"
+           android:inputType="textPersonName" />
+
+
+       <Button
+           android:id="@+id/button2"
+           android:layout_width="80dp"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/textView5"
+           android:layout_marginStart="14dp"
+           android:clickable="true"
+           android:focusable="true"
+           android:layout_toEndOf="@+id/Medication"
+           android:text="ADD" />
+
+       <Button
+           android:id="@+id/save_button"
+           android:layout_width="80dp"
+           android:clickable="true"
+           android:focusable="true"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/button2"
+           android:layout_alignBottom="@+id/button2"
+           android:layout_alignParentEnd="true"
+           android:text="SAVE" />
+
+   </RelativeLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+     <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp" />
+
+   <TextView
+       android:id="@android:id/empty"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:gravity="center"
+       android:padding="10dp"
+       android:text="no_friends"
+       android:textColor="#f1f1f1"
+       android:textSize="15sp"
+       android:textStyle="bold"
+       android:visibility="gone" >
+   </TextView>
+   </LinearLayout>
+
+
+
+</android.widget.LinearLayout>
